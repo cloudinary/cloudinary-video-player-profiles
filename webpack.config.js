@@ -1,6 +1,6 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
-const outputPath = path.resolve(__dirname, './lib');
+const outputPath = path.resolve(__dirname, './dist');
 
 module.exports = {
   mode: 'production',
