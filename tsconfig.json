@@ -1,17 +1,14 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "esModuleInterop": true,
-    "lib": ["ES2021"],
-    "module": "CommonJS",
-    "moduleResolution": "Node",
-    "noImplicitReturns": true,
+    "outDir": "./lib",
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2020",
+    "declaration": true,
     "resolveJsonModule": true,
-    "sourceMap": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "target": "ES2021"
+    "esModuleInterop": true
   },
   "exclude": ["node_modules"]
 }

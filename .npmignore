@@ -12,5 +12,6 @@ yarn-error.log
 env.js
 lib/
 .DS_Store
+temp_types/
 
 \.history/

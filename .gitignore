@@ -13,5 +13,6 @@ env.js
 dist/
 lib/
 .DS_Store
+temp_types/
 
 \.history/

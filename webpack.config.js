@@ -1,13 +1,20 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
-const outputPath = path.resolve(__dirname, './dist');
+const outputPath = path.resolve(__dirname, './lib');
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.ts',
+  entry: {
+    'index': './src/index.ts',
+  },
+  devtool: 'source-map',
   output: {
-    filename: `[name].js`,
-    path: outputPath
+    filename: '[name].js',
+    path: outputPath,
+    publicPath: '',
+    library: {
+      type: 'module'
+    },
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.json'],
@@ -18,7 +25,7 @@ module.exports = {
       {
         test: /\.tsx?$/i,
         exclude: /node_modules/,
-        use: ['ts-loader'],
+        loader: 'ts-loader',
       }
     ]
   },
@@ -30,4 +37,7 @@ module.exports = {
       }]
     })
   ],
+  experiments: {
+    outputModule: true
+  }
 };
