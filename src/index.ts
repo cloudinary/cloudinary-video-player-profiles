@@ -1,21 +1,21 @@
-import cldDefault from './default-profiles/cldDefault.json';
-import cldLooping from './default-profiles/cldLooping.json';
-import cldAdaptiveStream from './default-profiles/cldAdaptiveStream.json';
+import cldDefault from './default-profiles/cld-default.json';
+import cldLooping from './default-profiles/cld-looping.json';
+import cldAdaptiveStream from './default-profiles/cld-adaptive-stream.json';
 
 export const cldDefaultProfile = {
-  name: 'cldDefault',
+  name: 'cld-default',
   isDefault: true,
   config: cldDefault,
 };
 
 export const cldLoopingProfile = {
-  name: 'cldDefault',
+  name: 'cld-looping',
   isDefault: true,
   config: cldLooping,
 };
 
 export const cldAdaptiveStreamProfile = {
-  name: 'cldAdaptiveStream',
+  name: 'cld-adaptive-stream',
   isDefault: true,
   config: cldAdaptiveStream,
 };
