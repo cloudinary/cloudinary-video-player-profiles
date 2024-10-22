@@ -13,7 +13,7 @@ module.exports = {
     path: outputPath,
     publicPath: '',
     library: {
-      type: 'module'
+      type: 'commonjs'
     },
   },
   resolve: {
