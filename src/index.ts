@@ -1,6 +1,7 @@
 import cldDefault from './default-profiles/cld-default.json';
 import cldLooping from './default-profiles/cld-looping.json';
 import cldAdaptiveStream from './default-profiles/cld-adaptive-stream.json';
+import cldLiveStreaming from './default-profiles/cld-live-streaming.json';
 
 export const cldDefaultProfile = {
   name: 'cld-default',
@@ -20,4 +21,10 @@ export const cldAdaptiveStreamProfile = {
   config: cldAdaptiveStream,
 };
 
-export const defaultProfiles = [cldDefaultProfile, cldLoopingProfile, cldAdaptiveStreamProfile];
+export const cldLiveStreamingProfile = {
+  name: 'cld-live-streaming',
+  isDefault: true,
+  config: cldLiveStreaming,
+};
+
+export const defaultProfiles = [cldDefaultProfile, cldLoopingProfile, cldAdaptiveStreamProfile, cldLiveStreamingProfile];
