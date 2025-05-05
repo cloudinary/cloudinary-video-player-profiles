@@ -11,11 +11,6 @@
   },
   "sourceOptions": {
     "chapters": true,
-    "sourceTypes": ["hls"],
-    "transformation": [
-      {
-        "effect": ["volume:auto"]
-      }
-    ]
+    "sourceTypes": ["hls"]
   }
 }
